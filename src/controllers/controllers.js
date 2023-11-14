@@ -95,16 +95,16 @@ export const updateBook = async(req, res) => {
  * @param {Object} res - Express response object.
  * @returns {Object} - A success message confirming the book deletion as a JSON response.
  */
-export const deleteBook = async(req, res) => {
-    try{
-        const book = await Book.findByIdAndDelete(req.params.id);
-        if(!book) {
-            return res.status(404).json({message: "Book Not Found"})
-        }
-        res.status(200).json({message: "Book deleted successfully"});
-    }catch(err){
-        return res.status(404).json({message: err.message})
-    }
-}
+// export const deleteBook = async(req, res) => {
+//     try{
+//         const book = await Book.findByIdAndDelete(req.params.id);
+//         if(!book) {
+//             return res.status(404).json({message: "Book Not Found"})
+//         }
+//         res.status(200).json({message: "Book deleted successfully"});
+//     }catch(err){
+//         return res.status(404).json({message: err.message})
+//     }
+// }
 
 
