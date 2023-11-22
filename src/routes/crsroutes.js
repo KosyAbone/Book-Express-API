@@ -19,6 +19,6 @@ router.post('/addBooks', addMultipleBooks); //route to add multiple books
 
 router.put('/:id', updateBook); //route to update a book by its ID
 
-router.delete('/:id', deleteBook); //route to delete a book by its ID
+// router.delete('/:id', deleteBook); //route to delete a book by its ID
 
 export default router
